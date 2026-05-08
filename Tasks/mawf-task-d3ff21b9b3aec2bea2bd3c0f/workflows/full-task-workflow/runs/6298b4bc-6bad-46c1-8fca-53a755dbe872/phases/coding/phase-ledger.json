@@ -1,0 +1,15 @@
+{
+  "status": "not_started",
+  "producer": null,
+  "producer_history": [],
+  "verifier": {
+    "findings": []
+  },
+  "verifier_history": [],
+  "critic": {
+    "accepted_findings": [],
+    "rejected_findings": [],
+    "producer_patches": []
+  },
+  "critic_history": []
+}
