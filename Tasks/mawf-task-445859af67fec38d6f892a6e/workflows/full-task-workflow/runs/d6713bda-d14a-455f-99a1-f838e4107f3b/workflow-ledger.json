@@ -1,0 +1,93 @@
+{
+  "workflow": {
+    "name": "full-task-workflow",
+    "orchestration": {
+      "mode": "sequential",
+      "allow_parallel_execution": false,
+      "max_parallel_phases": null
+    },
+    "display_name": "Complete task implementation with planning, coding, testing, and verification",
+    "description": "Complete task implementation with planning, coding, testing, and verification",
+    "execution_status": "not_started"
+  },
+  "phases": [
+    {
+      "name": "planning",
+      "display_name": "Implementation Planning",
+      "description": "Analyze task requirements and create an implementation plan",
+      "order": 1,
+      "depends_on": [],
+      "subscribes_to": [],
+      "subscribed_input_order": [],
+      "execution_control": {
+        "can_run_parallel": true
+      },
+      "phase_ledger_template": "phase-ledger-schema.json",
+      "output_context_key": "",
+      "type": "agent",
+      "initial_execution_status": "not_started",
+      "execution_status": "not_started",
+      "phase_ledger_ref": "phases/planning/phase-ledger.json"
+    },
+    {
+      "name": "coding",
+      "display_name": "Code Implementation",
+      "description": "Implement the solution according to the plan",
+      "order": 2,
+      "depends_on": [
+        "planning"
+      ],
+      "subscribes_to": [],
+      "subscribed_input_order": [],
+      "execution_control": {
+        "can_run_parallel": true
+      },
+      "phase_ledger_template": "phase-ledger-schema.json",
+      "output_context_key": "",
+      "type": "agent",
+      "initial_execution_status": "not_started",
+      "execution_status": "not_started",
+      "phase_ledger_ref": "phases/coding/phase-ledger.json"
+    },
+    {
+      "name": "testing",
+      "display_name": "Testing & Verification",
+      "description": "Run tests and verify the implementation",
+      "order": 3,
+      "depends_on": [
+        "coding"
+      ],
+      "subscribes_to": [],
+      "subscribed_input_order": [],
+      "execution_control": {
+        "can_run_parallel": true
+      },
+      "phase_ledger_template": "phase-ledger-schema.json",
+      "output_context_key": "",
+      "type": "agent",
+      "initial_execution_status": "not_started",
+      "execution_status": "not_started",
+      "phase_ledger_ref": "phases/testing/phase-ledger.json"
+    },
+    {
+      "name": "review",
+      "display_name": "Code Review",
+      "description": "Review changes for quality and best practices",
+      "order": 4,
+      "depends_on": [
+        "testing"
+      ],
+      "subscribes_to": [],
+      "subscribed_input_order": [],
+      "execution_control": {
+        "can_run_parallel": true
+      },
+      "phase_ledger_template": "phase-ledger-schema.json",
+      "output_context_key": "",
+      "type": "agent",
+      "initial_execution_status": "not_started",
+      "execution_status": "not_started",
+      "phase_ledger_ref": "phases/review/phase-ledger.json"
+    }
+  ]
+}

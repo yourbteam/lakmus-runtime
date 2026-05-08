@@ -1,0 +1,24 @@
+{
+  "task": {
+    "task_folder": "mawf-task-445859af67fec38d6f892a6e",
+    "title": "MAWF live artifact repo persistence smoke 1778241992-db34d29c",
+    "source_prompt_path": "initial-prompt.txt",
+    "status": "initialized"
+  },
+  "workflows": [
+    {
+      "name": "full-task-workflow",
+      "execution_status": "completed",
+      "active_run_id": "",
+      "latest_run_id": "d6713bda-d14a-455f-99a1-f838e4107f3b",
+      "workflow_runs": [
+        {
+          "run_id": "d6713bda-d14a-455f-99a1-f838e4107f3b",
+          "attempt": 1,
+          "execution_status": "completed",
+          "workflow_ledger_ref": "workflows/full-task-workflow/runs/d6713bda-d14a-455f-99a1-f838e4107f3b/workflow-ledger.json"
+        }
+      ]
+    }
+  ]
+}
